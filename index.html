@@ -10,20 +10,22 @@
     <div class="container">
         <h1>Password Generator</h1>
         
-        <div class="password-box">
-            <span id="passwordDisplay">Click Generate</span>
-        </div>
-
+        <div class="password-display" id="passwordDisplay">Press Generate</div>
+        
         <div class="controls">
             <button id="generateBtn" class="btn primary">Generate</button>
             <button id="copyBtn" class="btn secondary">Copy</button>
-            <button id="downloadBtn" class="btn success">Download .txt</button>
-            <button id="clearBtn" class="btn danger">Clear History</button>
         </div>
 
         <div class="history-section">
-            <h2>Saved Passwords (passwords.txt)</h2>
-            <pre id="historyDisplay">No passwords generated yet.</pre>
+            <div class="history-header">
+                <h2>Saved Passwords (passwords.txt)</h2>
+                <div class="history-actions">
+                    <button id="downloadBtn" class="btn small">Download .txt</button>
+                    <button id="clearBtn" class="btn small danger">Clear</button>
+                </div>
+            </div>
+            <textarea id="historyBox" readonly placeholder="No passwords generated yet..."></textarea>
         </div>
     </div>
 
