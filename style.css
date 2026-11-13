@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1a202c;
+}
+
+.password-box {
+    background: #edf2f7;
+    border: 2px dashed #cbd5e0;
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d3748;
+    word-break: break-all;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    flex: 1 1 45%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.primary {
+    background-color: #3182ce;
+    color: white;
+}
+
+.secondary {
+    background-color: #718096;
+    color: white;
+}
+
+.success {
+    background-color: #38a169;
+    color: white;
+}
+
+.danger {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.history-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #4a5568;
+}
+
+pre {
+    background: #1a202c;
+    color: #a0aec0;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    max-height: 250px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}

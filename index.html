@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        
+        <div class="password-box">
+            <span id="passwordDisplay">Click Generate</span>
+        </div>
+
+        <div class="controls">
+            <button id="generateBtn" class="btn primary">Generate</button>
+            <button id="copyBtn" class="btn secondary">Copy</button>
+            <button id="downloadBtn" class="btn success">Download .txt</button>
+            <button id="clearBtn" class="btn danger">Clear History</button>
+        </div>
+
+        <div class="history-section">
+            <h2>Saved Passwords (passwords.txt)</h2>
+            <pre id="historyDisplay">No passwords generated yet.</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
