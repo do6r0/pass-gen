@@ -2,10 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #f4f6f9;
     color: #333;
     display: flex;
@@ -18,31 +18,34 @@ body {
 .container {
     background: #ffffff;
     width: 100%;
-    max-width: 520px;
-    padding: 28px;
+    max-width: 500px;
+    padding: 24px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-    font-size: 22px;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #1a1a1a;
+    color: #1a202c;
 }
 
-.password-display {
-    background-color: #f0f2f5;
-    border: 1px solid #dcdfe6;
+.password-box {
+    background: #edf2f7;
+    border: 1px solid #cbd5e0;
     border-radius: 8px;
-    padding: 18px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 16px;
     text-align: center;
     margin-bottom: 16px;
     word-break: break-all;
-    color: #111;
+}
+
+#current-password {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #2d3748;
 }
 
 .controls {
@@ -54,10 +57,10 @@ h1 {
 .btn {
     flex: 1;
     padding: 12px;
-    font-size: 16px;
-    font-weight: 600;
     border: none;
     border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
 }
@@ -67,21 +70,26 @@ h1 {
 }
 
 .primary {
-    background-color: #2563eb;
+    background-color: #3182ce;
     color: white;
 }
 
 .primary:hover {
-    background-color: #1d4ed8;
+    background-color: #2b6cb0;
 }
 
 .secondary {
     background-color: #e2e8f0;
-    color: #1e293b;
+    color: #2d3748;
 }
 
 .secondary:hover {
-    background-color: #cbd5e1;
+    background-color: #cbd5e0;
+}
+
+.history-section {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 16px;
 }
 
 .history-header {
@@ -94,44 +102,43 @@ h1 {
 }
 
 .history-header h2 {
-    font-size: 15px;
-    color: #475569;
+    font-size: 1rem;
+    color: #4a5568;
 }
 
 .history-actions {
     display: flex;
-    gap: 6px;
+    gap: 8px;
 }
 
 .btn.small {
     padding: 6px 10px;
-    font-size: 13px;
-    background-color: #10b981;
+    font-size: 0.85rem;
+    background-color: #48bb78;
     color: white;
 }
 
 .btn.small:hover {
-    background-color: #059669;
+    background-color: #38a169;
 }
 
 .btn.small.danger {
-    background-color: #ef4444;
+    background-color: #f56565;
 }
 
 .btn.small.danger:hover {
-    background-color: #dc2626;
+    background-color: #e53e3e;
 }
 
-textarea {
+#history-log {
     width: 100%;
-    height: 200px;
+    height: 220px;
     padding: 12px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 13px;
-    border: 1px solid #dcdfe6;
+    border: 1px solid #cbd5e0;
     border-radius: 8px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9rem;
     resize: vertical;
-    background-color: #fafafa;
-    color: #222;
-    line-height: 1.5;
+    background-color: #f8fafc;
+    color: #2d3748;
 }
