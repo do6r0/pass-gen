@@ -2,104 +2,136 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: #f4f6f8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f9;
     color: #333;
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
     background: #ffffff;
-    max-width: 600px;
     width: 100%;
-    padding: 30px;
+    max-width: 520px;
+    padding: 28px;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
     text-align: center;
-    color: #1a202c;
+    margin-bottom: 20px;
+    color: #1a1a1a;
 }
 
-.password-box {
-    background: #edf2f7;
-    border: 2px dashed #cbd5e0;
+.password-display {
+    background-color: #f0f2f5;
+    border: 1px solid #dcdfe6;
     border-radius: 8px;
     padding: 18px;
-    text-align: center;
-    margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    color: #2d3748;
+    text-align: center;
+    margin-bottom: 16px;
     word-break: break-all;
+    color: #111;
 }
 
 .controls {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
 .btn {
-    flex: 1 1 45%;
+    flex: 1;
     padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: opacity 0.2s;
+    transition: background-color 0.2s, transform 0.1s;
 }
 
-.btn:hover {
-    opacity: 0.9;
+.btn:active {
+    transform: scale(0.98);
 }
 
 .primary {
-    background-color: #3182ce;
+    background-color: #2563eb;
     color: white;
+}
+
+.primary:hover {
+    background-color: #1d4ed8;
 }
 
 .secondary {
-    background-color: #718096;
-    color: white;
+    background-color: #e2e8f0;
+    color: #1e293b;
 }
 
-.success {
-    background-color: #38a169;
-    color: white;
+.secondary:hover {
+    background-color: #cbd5e1;
 }
 
-.danger {
-    background-color: #e53e3e;
-    color: white;
-}
-
-.history-section h2 {
-    font-size: 16px;
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
-    color: #4a5568;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-pre {
-    background: #1a202c;
-    color: #a0aec0;
-    padding: 15px;
-    border-radius: 8px;
+.history-header h2 {
+    font-size: 15px;
+    color: #475569;
+}
+
+.history-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.btn.small {
+    padding: 6px 10px;
+    font-size: 13px;
+    background-color: #10b981;
+    color: white;
+}
+
+.btn.small:hover {
+    background-color: #059669;
+}
+
+.btn.small.danger {
+    background-color: #ef4444;
+}
+
+.btn.small.danger:hover {
+    background-color: #dc2626;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
     font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
-    max-height: 250px;
-    overflow-y: auto;
-    white-space: pre-wrap;
+    font-size: 13px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    resize: vertical;
+    background-color: #fafafa;
+    color: #222;
     line-height: 1.5;
 }
